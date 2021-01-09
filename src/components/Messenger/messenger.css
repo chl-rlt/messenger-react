@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* Messenger */
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.username {
+  font-size: 16px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.date {
+  font-size: 14px;
+  margin: 0;
+}
+
+.messenger {
+  display: flex;
+  background-color: white;
+  flex-direction: row;
+  border-radius: 4px;
+  width: 50%;
+  align-self: center;
+  height: 70%;
+  box-shadow: 1px 1px 12px #555; 
+}
+
+.users {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  padding: 1rem;
+}
+
+.user {
+  font-size: 14px;
+  word-wrap: break-word;
+  align-self: center;
+  width: 90%;
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+  font-weight: 777;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  background-color: #FFA69E;
+  color: rgb(255, 254, 254);
+}
+
+.user:hover {
+  background-color: #e2938c;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.messages {
+  padding: 1rem;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+}
+
+.message {
+  align-self: flex-start;
+  width: auto;
+  margin-top: 5px;
+  font-size: 15px; 
+  word-wrap: break-word;
+  
+}
+
+.single  {
+  margin-bottom: 1rem;
+  background-color: #fce4e3;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 10px;
+}
+
+.input {
+  width: 100%;
+  padding: 1rem;
+  border: inherit;
+  border-top: 1px solid #fFA69E;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  color: #555;
+  
+
+}
+
+.input:focus {
+  outline: 0;
+  color: #e2938c;
+}
+
+/* Media queries */
+
+@media (max-width: 1024px) {
+  .messenger {
+    width: 77%;
+  }
+
+  .messages {
+    margin-top: 11px;
+  }
+}
+
+@media (max-width: 768px) {
+  .messenger {
+    width: 94%;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 8.5rem!important;
+  }
+
+}
+
+@media (max-width: 425px) {
+  .user {
+    background: none;
+    color: #fFA69E;
+    text-align: left;
+    padding-left: 0; 
+  }
+}
